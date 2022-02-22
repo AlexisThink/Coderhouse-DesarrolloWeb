@@ -28,13 +28,76 @@ header {
 }
 
 section {
-    margin-top: 60px;
+/*     margin-top: 60px; */
     padding: 5px 12%;
 
     text-align: center;
 }
- 
- footer {
+
+section h2 {
+    margin-bottom: 40px;
+}
+
+.feature {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+
+    border-bottom: 1px solid gray;
+}
+
+.feature__icon{
+    width: 20%;
+}
+
+.feature__icon img {
+    width: 50%;
+}
+
+.feature__description {
+    width: 80%;
+    text-align: start;
+}
+
+.feature__description p {
+    margin-bottom: 20px;
+}
+
+.download {
+    margin-bottom: 100px;
+}
+
+.download__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.android {
+    background-color: #a4c639;
+}
+
+.ios {
+    background-color: dodgerblue;
+}
+.download__button {
+    width: 45%;
+    height: 40px;
+    border-radius: 4px;
+
+    color: white;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.download__button img {
+    height: 80%;
+}
+
+footer {
     width: 90%;
     height: 40px;
     padding: 10px 5%;
