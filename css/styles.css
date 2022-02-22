@@ -25,6 +25,8 @@ header {
     padding: 5px 12%;
 
     text-align: center;
+}header img {
+    width: 80%;
 }
 
 section {
