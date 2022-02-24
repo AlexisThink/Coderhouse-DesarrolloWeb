@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/features.css">
 </head>
     <body>
         <!-- Navbar -->
         <nav>
-            <img src="" alt="Logotipo">
-            <ul>
+            <img src="../img/logo_black.png" alt="Logotipo">
+<!--             <ul>
                 <li>
                     <a href="./about.html">About</a>
                 </li>
@@ -26,23 +27,35 @@
                 <li>
                     <a href="./faq.html">FAQ</a>
                 </li>
-            </ul>
+            </ul> -->
         </nav> 
-        <h1>Lorem ipsum</h1>
+        <h1>Caracteristicas</h1>
         <!-- Feature Individual -->
-        <article>
-            <img src="" alt="Icono de la caracteristicas">
-            <div>
-                <h4>Adipiscing elit</h4>
-                <p>Dolor sit amet, consectetur</p>
-            </div>
-        </article>
+        <section>
+            <article class="feature">
+                <div class="feature__icon">
+                    <img src="../img/f1.png" alt="Icono de la caracteristicas">
+                </div>
+                <div class="feature__description">
+                    <h4>Enlaces ilimitados</h4>
+                    <p>No importa cuentas redes so sitios quieras colocar, aqui podras aserlo</p>
+                </div>
+            </article>
+        </section>
         <!-- Download Section -->
-        <h2>Lorem ipsum</h2>
-        <div>
-            <a href="">Android Download</a>
-            <a href="">iOS Download</a>
-        </div>
+        <section class="download">
+            <h2>Descarga la app!</h2>
+            <div class="download__container">
+                <a class="download__button android" href="">
+                    <img src="../img/android.png" alt="">
+                    Download
+                </a>
+                <a class="download__button ios"href="">
+                    <img src="../img/iPhone.png" alt="">
+                    Download
+                </a>
+            </div>
+        </section>
         <!-- Footer -->
         <footer></footer>
     </body>
