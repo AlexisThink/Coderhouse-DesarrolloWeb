@@ -1,13 +1,14 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     font-family: 'Mukta', sans-serif;
 }
 
 /* Navbar */
 .navbar {
-    width: 90%;
-    height: 40px;
-    padding: 5px 5%;
+    width: 100%;
+    height: 60px;
+    padding: 10px 5%;
 
     top: 0;
     position: fixed; 
@@ -149,8 +150,8 @@ section{
 }
 
 footer {
-    width: 90%;
-    height: 40px;
+    width: 100%;
+    height: 60px;
     padding: 10px 5%;
 
     bottom: 0;
