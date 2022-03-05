@@ -200,11 +200,13 @@
     padding: 0 10%;
     margin-top: 80px;
 
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
 }
 
 .about img {
+    width: 100%;
     border-radius: 6px;
 }
 
@@ -268,6 +270,23 @@
     .download__link {
         width: 20%;
     }
+
+    /* ABOUT PAGE */
+    .about {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto;
+        column-gap: 20px;
+        row-gap: 40px;
+    }
+
+    .about img {
+        width: 100%;
+        border-radius: 6px;
+    }
+
+    .about h1 {
+        justify-self: start;
+    }
 }
 
 /* Desktop */
@@ -324,6 +343,23 @@
 
     .download__link {
         width: 20%;
+    }
+
+    /* ABOUT PAGE */
+    .about {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto;
+        column-gap: 20px;
+        row-gap: 40px;
+    }
+
+    .about img {
+        width: 100%;
+        border-radius: 6px;
+    }
+
+    .about h1 {
+        justify-self: start;
     }
 }
 
@@ -390,5 +426,22 @@
 
     .download__link {
         width: 10%;
+    }
+
+    /* ABOUT PAGE */
+    .about {
+        grid-template-columns: 30% 70%;
+        grid-template-rows: auto auto;
+        column-gap: 20px;
+        row-gap: 40px;
+    }
+
+    .about img {
+        height: 100%;
+        border-radius: 6px;
+    }
+
+    .about h1 {
+        justify-self: start;
     }
 }
