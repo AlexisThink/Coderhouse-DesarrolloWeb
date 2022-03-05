@@ -37,7 +37,7 @@
 .navbar__menu:hover {
     background-color: black;
     color: white;
-    transition: all 250ms ease-in-out;
+    transition: all 300ms ease-in-out;
 }
 
 .navbar__menu__content {
