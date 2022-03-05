@@ -264,6 +264,17 @@
     text-align: center;
 }
 
+/* FAQ PAGE */
+.faq {
+    padding: 0 10%;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.faq__container {
+    padding: 0 10%;
+}
+
 /* Tablet */
 @media only screen and (min-width: 768px) and (max-width: 1023px){
     /* Navbar */
@@ -341,6 +352,11 @@
     .pricing__container {
         grid-template-columns: auto auto;
         column-gap: 20px;
+    }
+
+    /* FAQ PAGE */
+    .faq__container {
+        padding: 0 15%;
     }
 }
 
@@ -422,6 +438,11 @@
         grid-template-columns: auto auto;
         column-gap: 60px;
         row-gap: 60px;
+    }
+    
+    /* FAQ PAGE */
+    .faq__container {
+        padding: 0 20%;
     }
 }
 
@@ -511,5 +532,10 @@
     .pricing__container {
         grid-template-columns: auto auto auto;
         column-gap: 80px;
+    }
+
+    /* FAQ PAGE */
+    .faq__container {
+        padding: 0 25%;
     }
 }
