@@ -143,10 +143,6 @@
     padding: 0 10%;
 }
 
-.features h2 {
-  margin: 10px 0 40px 0;  
-}
-
 .features__container {
     display: grid;
     grid-template-columns: auto;
