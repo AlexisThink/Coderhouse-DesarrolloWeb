@@ -5,58 +5,110 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/features.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
     <body>
         <!-- Navbar -->
-        <nav>
+        <nav class="navbar">
             <img src="../img/logo_black.png" alt="Logotipo">
-<!--             <ul>
-                <li>
-                    <a href="./about.html">About</a>
-                </li>
-                <li>
-                    <a href="./pricing.html">Pricing</a>
-                </li>
-                <li>
-                    <a href="./features.html">Feature</a>
-                </li>
-                <li>
-                    <a href="./contact.html">Contact</a>
-                </li>
-                <li>
-                    <a href="./faq.html">FAQ</a>
-                </li>
-            </ul> -->
-        </nav> 
-        <h1>Caracteristicas</h1>
-        <!-- Feature Individual -->
-        <section>
-            <article class="feature">
-                <div class="feature__icon">
-                    <img src="../img/f1.png" alt="Icono de la caracteristicas">
+            <div class="navbar__menu">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+                <div class="navbar__menu__content">
+                    <div class="navbar__menu__content__links">
+                        <a href="./about.html">About</a>
+                    
+                        <a href="./pricing.html">Pricing</a>
+                    
+                        <a href="./features.html">Feature</a>
+                    
+                        <a href="./contact.html">Contact</a>
+                    
+                        <a href="./faq.html">FAQ</a>
+                    </div>
                 </div>
-                <div class="feature__description">
+            </div>
+
+            <div class="navbar__menuHorizontal">
+                <a href="./about.html">About</a>
+                    
+                <a href="./pricing.html">Pricing</a>
+            
+                <a href="./features.html">Feature</a>
+            
+                <a href="./contact.html">Contact</a>
+            
+                <a href="./faq.html">FAQ</a>
+            </div>
+        </nav> 
+        
+        <section class="featuresTitle">
+            <h1>Caracteristicas</h1>
+        </section>
+
+        <!-- Divider -->
+        <br>
+
+        <!-- Features -->
+        <section class="features">
+            <div class="features__container">
+                <!-- Single Feature -->
+                <article class="singleFeature">
+                    <i class="fa fa-share-alt fa-2x" aria-hidden="true"></i>
                     <h4>Enlaces ilimitados</h4>
                     <p>No importa cuentas redes so sitios quieras colocar, aqui podras aserlo</p>
-                </div>
-            </article>
+                </article>
+                <article class="singleFeature">
+                    <i class="fa fa-play-circle fa-2x" aria-hidden="true"></i>
+                    <h4>Previews</h4>
+                    <p>Muestrales un poco a tus seguidores de lo que van a encontrar en tus perfiles o cuentas, con videos e imagen que cargan directo desde tu pagina</p>
+                </article>
+                <article class="singleFeature">
+                    <i class="fa fa-bullhorn fa-2x" aria-hidden="true"></i>
+                    <h4>CTA Personalizados</h4>
+                    <p>Desde que se suscriban a tu membresia, consigan entradas, vean tu ultimo video o compren tu merchandasing, tenemos un "call-to-action" perfecto para cada ocasion.</p>
+                </article>
+                <article class="singleFeature">
+                    <i class="fa fa-check-circle fa-2x" aria-hidden="true"></i>
+                    <h4>Verificacion para todos</h4>
+                    <p>No importa si haz perdido algun perfil de tus redes sociales o todos, nosotros nos encargaremos de que sigas verificado aqui y tus seguidores sepan cual es tu nuevo perfil</p>
+                </article>
+            </div>
+
         </section>
+
         <!-- Download Section -->
         <section class="download">
             <h2>Descarga la app!</h2>
+            <br>
             <div class="download__container">
-                <a class="download__button android" href="">
-                    <img src="../img/android.png" alt="">
-                    Download
+                <a class="download__link" href="https://www.apple.com/app-store/" target="_blank">
+                    <img src="./img/appstore_badge.png" alt="App Store Badge">
                 </a>
-                <a class="download__button ios"href="">
-                    <img src="../img/iPhone.png" alt="">
-                    Download
+                <a class="download__link" href="https://play.google.com/store/apps" target="_blank">
+                    <img src="./img/playstore_badge.png" alt="Play Store Badge">
                 </a>
             </div>
         </section>
+        <br>        
+
         <!-- Footer -->
-        <footer></footer>
+        <footer class="footer">
+            <div class="footer__container">
+                <a href="http://www.facebook.com/" target="_blank">
+                    <i class="fa fa-facebook fa-lg" aria-hidden="true"></i>
+                </a>
+                <a href="http://www.twitter.com/" target="_blank">
+                    <i class="fa fa-twitter fa-lg" aria-hidden="true"></i>
+                </a>
+                <a href="http://www.instagram.com/" target="_blank">
+                    <i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
+                </a>
+            </div>
+        </footer>
     </body>
 </html>
