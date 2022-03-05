@@ -264,6 +264,17 @@
     text-align: center;
 }
 
+/* CONTACT PAGE */
+.contact {
+    padding: 0 10%;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.contact__form {
+    padding: 0 10%;
+}
+
 /* FAQ PAGE */
 .faq {
     padding: 0 10%;
@@ -354,6 +365,10 @@
         column-gap: 20px;
     }
 
+    /* CONTACT PAGE */
+    .contact__form {
+        padding: 0 15%;
+    }
     /* FAQ PAGE */
     .faq__container {
         padding: 0 15%;
@@ -438,6 +453,11 @@
         grid-template-columns: auto auto;
         column-gap: 60px;
         row-gap: 60px;
+    }
+
+    /* CONTACT PAGE */
+    .contact__form {
+        padding: 0 20%;
     }
     
     /* FAQ PAGE */
@@ -532,6 +552,11 @@
     .pricing__container {
         grid-template-columns: auto auto auto;
         column-gap: 80px;
+    }
+
+    /* CONTACT PAGE */
+    .contact__form {
+        padding: 0 25%;
     }
 
     /* FAQ PAGE */
