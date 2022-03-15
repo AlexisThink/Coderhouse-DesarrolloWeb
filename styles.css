@@ -3,6 +3,11 @@
     margin: 0;
     font-family: 'Mukta', sans-serif;
 }
+/* Navbar */
+.custom-navbar {
+    box-shadow: 0 0 20px black !important;
+    background-color: white !important;
+}
 
 /* Footer */
 .footer {
