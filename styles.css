@@ -4,89 +4,6 @@
     font-family: 'Mukta', sans-serif;
 }
 
-/* Navbar */
-/* .navbar {
-    width: 100%;
-    height: 60px;
-    padding: 10px 10%;
-
-    top: 0;
-    position: fixed; 
-
-    background-color: white;
-    box-shadow: 0 0 20px gray;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.navbar__menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    position: relative;
-    border: 1px solid black;
-
-    width: 40px;
-    border-radius: 6px;
-}
-
-.navbar__menu:hover {
-    background-color: black;
-    color: white;
-    transition: all 300ms ease-in-out;
-}
-
-.navbar__menu__content {
-    display: none;
-    position: absolute;
-
-    top: 40px;
-    right: 5%;
-    z-index: 1;
-    width: 100px;
-    border-radius: 6px;
-
-    background-color: white;
-    box-shadow: 0 0 20px gray;
-}
-
-.navbar__menu__content__links {
-    display: flex;
-    flex-direction: column;
-
-    width: 100%;
-    padding: 10% 20%;
-}
-
-.navbar__menu__content__links a {
-    text-decoration: none;
-    color: black;
-}
-
-
-.navbar__menu:hover .navbar__menu__content{
-    display: block;
-    transition: all 3s ease-in-out;
-}
-
-.navbar__menuHorizontal {
-    display: none;
-
-    width: 50%;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.navbar__menuHorizontal a {
-    color: black;
-    text-decoration: none;
-} */
-
 /* Footer */
 .footer {
     width: 100%;
@@ -288,15 +205,6 @@
 
 /* Tablet */
 @media only screen and (min-width: 768px) and (max-width: 1023px){
-    /* Navbar */
-/*     .navbar__menu {
-        display: none;
-    }
-
-    .navbar__menuHorizontal {
-        display: flex;
-    } */
-
     /* INDEX PAGE */
     /* Hero */
     .hero img {
@@ -377,15 +285,6 @@
 
 /* Desktop */
 @media only screen and (min-width: 1024px) and (max-width: 1439px) {
-    /* Navbar */
-/*     .navbar__menu {
-        display: none;
-    }
-
-    .navbar__menuHorizontal {
-        display: flex;
-    } */
-
     /* INDEX PAGE */
     /* Hero */
     .hero img {
@@ -468,16 +367,6 @@
 
 /* 4K */
 @media only screen and (min-width: 1440px) and (max-width: 2560px) {
-    /* Navbar */
-/*     .navbar__menu {
-        display: none;
-    }
-
-    .navbar__menuHorizontal {
-        display: flex;
-        width: 25%;
-    } */
-
     /* Footer */
     .footer__container {
         width: 25%;
