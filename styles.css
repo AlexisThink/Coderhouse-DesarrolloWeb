@@ -283,6 +283,10 @@ body {
     padding: 0 10%;
 }
 
+.spacing-form {
+    margin-bottom: 40px;
+}
+
 /* FAQ PAGE */
 .faq {
     padding: 0 10%;
