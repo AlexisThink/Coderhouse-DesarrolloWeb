@@ -1,0 +1,41 @@
+@keyframes bodyColor {
+    0% {
+        background-color: #ef32d9;
+    }
+
+    50% {
+        background-color: #00dbde;
+    }
+
+    100% {
+        background-color: #ef32d9;
+    }
+}
+
+@keyframes shadowColor {
+    0% {
+        box-shadow: 0 0 15px #ef32d9;
+    }
+
+    50% {
+        box-shadow: 0 0 15px #00dbde;
+    }
+
+    100% {
+        box-shadow: 0 0 15px #ef32d9;
+    }
+}
+
+@mixin animationDetailsLetters {
+    animation-name: bodyColor;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@mixin animationDetailsShadow {
+    animation-name: shadowColor;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}

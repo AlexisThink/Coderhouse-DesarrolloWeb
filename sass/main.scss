@@ -1,0 +1,15 @@
+/* Globals */
+@import './misc/variables';
+@import './misc/mixins';
+
+/* Partials */
+@import './partials/navbar';
+@import './partials/footer';
+
+/* Views */
+@import './views/index';
+@import './views/about';
+@import './views/pricing';
+@import './views/features';
+@import './views/contact';
+@import './views/faq';
