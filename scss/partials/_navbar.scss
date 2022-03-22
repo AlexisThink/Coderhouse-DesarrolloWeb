@@ -1,14 +1,13 @@
-/* Navbar */
 .custom-navbar {
     background-color: black !important;
 
     @include animationDetailsShadow;
-}
 
-.custom-navbar i {
-    color: white !important; 
-}
+    i {
+        color: white !important; 
+    }
 
-.navbar-nav a{
-    color: white !important;
+    a {
+        color: white !important;
+    }
 }
