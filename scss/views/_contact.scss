@@ -1,30 +1,41 @@
 .contact {
-    padding: 0 10%;
-    margin-top: 80px;
-    text-align: center;
+    @include safeZone;
 
-    &__form {
-        padding: 0 10%;
+    &__title {
+        margin-bottom: 30px;
+
+        h1 {
+            animation-name: bodyColor;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 900;
+        }
     }
 }
 
 /* Tablet */
 @media only screen and (min-width: 768px) and (max-width: 1023px){ 
-    .contact__form {
-        padding: 0 15%;
-    }
+
+}
+
+/* Laptop */
+@media only screen and (min-width: 1024px) and (max-width: 1439px) { 
+
 }
 
 /* Desktop */
-@media only screen and (min-width: 1024px) and (max-width: 1439px) { 
-    .contact__form {
-        padding: 0 20%;
-    }
+@media only screen and (min-width: 1440px) and (max-width: 2559px) {
+
+ 
 }
 
 /* 4K */
-@media only screen and (min-width: 1440px) and (max-width: 2560px) {
-    .contact__form {
-        padding: 0 25%;
-    }   
+@media only screen and (min-width: 2560px) {
+
+  
 }

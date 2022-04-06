@@ -1,5 +1,5 @@
 /* Globals */
-* {
+*, h1 {
   box-sizing: border-box;
   margin: 0;
   font-family: 'Sora', sans-serif; }
@@ -400,26 +400,40 @@ body {
 
 .contact {
   padding: 0 10%;
-  margin-top: 80px;
-  text-align: center; }
-  .contact__form {
-    padding: 0 10%; }
+  margin-top: 24px;
+  margin-bottom: 90px;
+  /* Tablet */
+  /* Laptop */
+  /* Desktop */
+  /* 4K */ }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .contact {
+      padding: 0 15%; } }
+  @media only screen and (min-width: 1024px) and (max-width: 1439px) {
+    .contact {
+      padding: 0 15%; } }
+  @media only screen and (min-width: 1440px) and (max-width: 2559px) {
+    .contact {
+      padding: 0 20%; } }
+  @media only screen and (min-width: 2560px) {
+    .contact {
+      padding: 0 25%; } }
+  .contact__title {
+    margin-bottom: 30px; }
+    .contact__title h1 {
+      animation-name: bodyColor;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 900; }
 
 /* Tablet */
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-  .contact__form {
-    padding: 0 15%; } }
-
+/* Laptop */
 /* Desktop */
-@media only screen and (min-width: 1024px) and (max-width: 1439px) {
-  .contact__form {
-    padding: 0 20%; } }
-
 /* 4K */
-@media only screen and (min-width: 1440px) and (max-width: 2560px) {
-  .contact__form {
-    padding: 0 25%; } }
-
 .accordion {
   color: black !important; }
 
