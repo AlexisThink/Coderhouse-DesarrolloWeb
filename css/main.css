@@ -418,17 +418,19 @@ body {
   @media only screen and (min-width: 2560px) {
     .contact {
       padding: 0 25%; } }
-  .contact__title {
-    margin-bottom: 30px; }
-    .contact__title h1 {
-      animation-name: bodyColor;
-      animation-duration: 4s;
-      animation-iteration-count: infinite;
-      animation-timing-function: ease-in-out;
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      font-weight: 900; }
+  .contact__title h1 {
+    animation-name: bodyColor;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+    margin-bottom: 20px;
+    text-align: center; }
+  .contact__title p {
+    margin-bottom: 20px; }
 
 /* Tablet */
 /* Laptop */
@@ -470,11 +472,10 @@ body {
     text-align: center; }
   .faq__title p {
     margin-bottom: 20px; }
-
-.singleFAQ {
-  margin-bottom: 20px; }
-  .singleFAQ h2 {
-    font-weight: 900; }
+  .faq__individual {
+    margin-bottom: 20px; }
+    .faq__individual h2 {
+      font-weight: 900; }
 
 /* Tablet */
 /* Desktop */

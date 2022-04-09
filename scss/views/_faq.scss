@@ -8,15 +8,17 @@
     &__title {
         @include titleAndDescription;
     }
-}
 
-.singleFAQ {
-    margin-bottom: 20px;
-
-    h2 {
-        font-weight: 900;
+    &__individual {
+        margin-bottom: 20px;
+    
+        h2 {
+            font-weight: 900;
+        }
     }
 }
+
+
 
 /* Tablet */
 @media only screen and (min-width: 768px) and (max-width: 1023px){ 

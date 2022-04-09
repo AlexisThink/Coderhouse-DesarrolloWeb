@@ -2,19 +2,7 @@
     @include safeZone;
 
     &__title {
-        margin-bottom: 30px;
-
-        h1 {
-            animation-name: bodyColor;
-            animation-duration: 4s;
-            animation-iteration-count: infinite;
-            animation-timing-function: ease-in-out;
-        
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-weight: 900;
-        }
+        @include titleAndDescription;
     }
 }
 
