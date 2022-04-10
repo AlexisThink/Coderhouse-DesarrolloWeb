@@ -75,16 +75,26 @@
             <!-- Title -->
             <div class="contact__title">
                 <h1>Contact</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipiscing elit et nisi egestas, nec nostra felis tellus. Aliquam convallis odio pharetra justo, malesuada cum velit, ad potenti porttitor.</p>
             </div>
 
             <!-- Form -->
             <section class="contact__form">
-                <fieldset>
-                    <label for="full_name">Full name:</label><br>
-                    <input type="text" id="full_name" name="full_name" placeholder="Jhon Appleseed"><br>
-                    <label for="proposal">Proposal:</label><br>
-                    <textarea name="proposal" id="proposal" cols="30" rows="10" placeholder="Write your proposal here"></textarea>
-                </fieldset>
+                <form action="/action_page.php">
+                    <label for="fname">Full name</label><br>
+                    <input type="text" placeholder="Jhon Apleseed" name="fname"><br>
+                    <label for="email">Email</label><br>
+                    <input type="email" placeholder="email@domain.com" name="email"><br>
+                    <label for="subject">Subject</label><br>
+                    <select name="subject">
+                        <option value="pr_press">Public Relationships and Press</option>
+                        <option value="business_associations">Business and Associations</option>
+                        <option value="feature">Feature Request</option>
+                    </select><br>
+                    <label for="message">Message</label><br>
+                    <textarea rows="6" placeholder="Write here" name="message" ></textarea>
+                    <input type="submit" value="Send">
+                </form> 
             </section>
         </div>
         
