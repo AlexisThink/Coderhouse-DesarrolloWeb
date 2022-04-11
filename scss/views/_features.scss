@@ -1,5 +1,109 @@
-.featuresTitle {
-    padding: 0 10%;
-    margin-top: 40px;
-    text-align: center;
+.features {
+    @include safeZone;
+
+    &__title {
+        @include titleAndDescription;
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+
+    &__individual {
+        display: grid;
+        grid-template-columns: 20% 80%;
+        grid-template-rows: auto auto;
+        
+        padding: 20px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid gray;
+    
+        transition: all 500ms;
+    
+        img {
+            width: 60%;
+        
+            align-self: center;
+            grid-row: 1 / 2 span;
+            grid-column: 1 / 2;
+        }
+    
+        h4, p {
+            text-align: left;
+        }
+    
+        &:hover {
+            color: black;
+            border-radius: 20px;
+            box-shadow: 0 0 20px white !important;
+            background-color: white !important;
+        }
+    }
+}
+
+
+
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 1023px){ 
+    .features {
+        &__content {
+            grid-template-columns: auto;
+            grid-template-rows: auto;
+            column-gap: 80px;
+        }
+
+        &__individual i {
+            align-self: start;
+        }
+    }
+}
+
+/* Laptop */
+@media only screen and (min-width: 1024px) and (max-width: 1439px) { 
+    .features {
+        &__content {
+            grid-template-columns: auto auto;
+            grid-template-rows: auto;
+            column-gap: 80px;
+        }
+
+        &__individual i {
+            align-self: start;
+        }
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1440px) and (max-width: 2559px) {
+    .features {
+        &__content {
+            grid-template-columns: auto auto;
+            column-gap: 80px;
+        }
+
+        &__individual {
+            i, p {
+                align-self: start;
+            }
+        }
+    }
+}
+
+/* 4K */
+@media only screen and (min-width: 2560px) {
+    .features {
+        &__content {
+            grid-template-columns: auto auto auto;
+            column-gap: 80px;
+        }
+
+        &__individual {
+            i, p {
+                align-self: start;
+            }
+        }
+    }
+  
 }
