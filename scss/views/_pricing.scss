@@ -1,24 +1,11 @@
 .pricing {
-    padding: 0 10%;
-    margin-top: 40px;
-    margin-bottom: 120px;
+    @include safeZone;
 
-    h1 {
-        animation-name: bodyColor;
-        animation-duration: 4s;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease-in-out;
-    
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-weight: 900;
+    &__title {
+        @include titleAndDescription;
     }
 
     &__container {
-        padding: 0 10%;
-        margin-bottom: 60px;
-    
         display: grid;
         grid-template-columns: auto;
         grid-template-rows: auto;
@@ -28,6 +15,7 @@
 }
 
 .plan {
+    border: 1px solid white;
     color: white;
     background: black;
     transition: all 500ms;
@@ -76,15 +64,15 @@
 }
 
 /* Tablet */
-@media only screen and (min-width: 768px) and (max-width: 1023px){ 
+@media only screen and (min-width: 768px) and (max-width: 1023px) {  
     .pricing__container {
         grid-template-columns: auto auto;
         column-gap: 20px;
     }
 }
 
-/* Desktop */
-@media only screen and (min-width: 1024px) and (max-width: 1439px) { 
+/* Laptop */
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
     .pricing__container {
         grid-template-columns: auto auto;
         column-gap: 60px;
@@ -92,10 +80,18 @@
     }
 }
 
-/* 4K */
-@media only screen and (min-width: 1440px) and (max-width: 2560px) { 
+/* Desktop */
+@media only screen and (min-width: 1440px) and (max-width: 2559px) { 
     .pricing__container {
         grid-template-columns: auto auto auto;
+        column-gap: 80px;
+    }
+}
+
+/* 4K */
+@media only screen and (min-width: 2560px) {
+    .pricing__container {
+        grid-template-columns: auto auto auto auto;
         column-gap: 80px;
     }
 }
