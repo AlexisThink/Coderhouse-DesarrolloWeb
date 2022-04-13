@@ -68,15 +68,27 @@ body {
     width: 25%; } }
 
 /* Views */
-/* Hero */
-.hero {
+.home {
   padding: 0 10%;
-  margin-top: 40px;
-  text-align: center;
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto; }
-  .hero h1 {
+  margin-top: 24px;
+  margin-bottom: 90px;
+  /* Tablet */
+  /* Laptop */
+  /* Desktop */
+  /* 4K */ }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .home {
+      padding: 0 15%; } }
+  @media only screen and (min-width: 1024px) and (max-width: 1439px) {
+    .home {
+      padding: 0 15%; } }
+  @media only screen and (min-width: 1440px) and (max-width: 2559px) {
+    .home {
+      padding: 0 20%; } }
+  @media only screen and (min-width: 2560px) {
+    .home {
+      padding: 0 25%; } }
+  .home__title h1 {
     animation-name: bodyColor;
     animation-duration: 4s;
     animation-iteration-count: infinite;
@@ -84,101 +96,17 @@ body {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-weight: 900; }
-  .hero img {
-    width: 80%;
-    margin: 10px 0;
-    justify-self: center; }
-  .hero p {
-    font-style: italic; }
-
-/* Download */
-.download {
-  text-align: center;
-  padding: 0 10%;
-  margin-bottom: 80px; }
-  .download h2 {
-    font-weight: 900; }
-  .download__container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between; }
-  .download__link {
-    width: 45%;
-    height: auto; }
-    .download__link img {
-      width: 100%; }
+    font-weight: 900;
+    margin-bottom: 20px;
+    text-align: center; }
+  .home__title p {
+    margin-bottom: 20px;
+    text-align: center; }
 
 /* Tablet */
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-  /* Hero */
-  .hero img {
-    width: 80%;
-    justify-self: center;
-    grid-row: 1 / 2 span;
-    grid-column: 1 / 1; }
-  .hero h1 {
-    text-align: left;
-    grid-row: 1;
-    grid-column: 2;
-    align-self: center; }
-  .hero p {
-    text-align: left;
-    grid-row: 2;
-    grid-column: 2; }
-  /* Download */
-  .download__container {
-    justify-content: space-evenly; }
-  .download__link {
-    width: 20%; } }
-
+/* Laptop */
 /* Desktop */
-@media only screen and (min-width: 1024px) and (max-width: 1439px) {
-  /* Hero */
-  .hero img {
-    width: 80%;
-    justify-self: center;
-    grid-row: 1 / 2 span;
-    grid-column: 1 / 1; }
-  .hero h1 {
-    text-align: left;
-    grid-row: 1;
-    grid-column: 2;
-    align-self: center; }
-  .hero p {
-    text-align: left;
-    grid-row: 2;
-    grid-column: 2; }
-  /* Download */
-  .download__container {
-    justify-content: space-evenly; }
-  .download__link {
-    width: 20%; } }
-
 /* 4K */
-@media only screen and (min-width: 1440px) and (max-width: 2560px) {
-  /* Hero */
-  .hero img {
-    width: 30%;
-    justify-self: center;
-    grid-row: 1 / 2 span;
-    grid-column: 1 / 1; }
-  .hero h1 {
-    text-align: left;
-    grid-row: 1;
-    grid-column: 2;
-    align-self: center; }
-  .hero p {
-    text-align: left;
-    grid-row: 2;
-    grid-column: 2; }
-  /* Download */
-  .download__container {
-    justify-content: space-evenly; }
-  .download__link {
-    width: 10%; } }
-
 .about {
   padding: 0 10%;
   margin-top: 24px;
@@ -211,7 +139,8 @@ body {
     margin-bottom: 20px;
     text-align: center; }
   .about__title p {
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    text-align: center; }
   .about__content {
     position: relative;
     transition: all 500ms; }
@@ -309,7 +238,8 @@ body {
     margin-bottom: 20px;
     text-align: center; }
   .pricing__title p {
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    text-align: center; }
   .pricing__container {
     display: grid;
     grid-template-columns: auto;
@@ -404,7 +334,8 @@ body {
     margin-bottom: 20px;
     text-align: center; }
   .features__title p {
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    text-align: center; }
   .features__content {
     display: grid;
     grid-template-columns: auto;
@@ -496,7 +427,8 @@ body {
     margin-bottom: 20px;
     text-align: center; }
   .contact__title p {
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    text-align: center; }
   .contact__form input, .contact__form select, .contact__form textarea {
     width: 100%;
     margin-bottom: 20px;
@@ -541,7 +473,8 @@ body {
     margin-bottom: 20px;
     text-align: center; }
   .faq__title p {
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    text-align: center; }
   .faq__individual {
     margin-bottom: 20px; }
     .faq__individual h2 {
