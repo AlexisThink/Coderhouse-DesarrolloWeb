@@ -1,27 +1,12 @@
 .about {
-    padding: 0 10%;
-    margin-top: 40px;
-    margin-bottom: 120px;
 
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: auto;
+    @include safeZone;
 
-    h1 {
-        text-align: center;
-    
-        animation-name: bodyColor;
-        animation-duration: 4s;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease-in-out;
-    
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-weight: 900;
+    &__title {
+        @include titleAndDescription;
     }
 
-    &__team {
+    &__content {
         position: relative;
         transition: all 500ms;
         
