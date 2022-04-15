@@ -4,24 +4,58 @@
     &__title {
         @include titleAndDescription;
     }
+
+    &__mockup {
+        img {
+            width: 100%;
+        }
+    }
 }
 
 /* Tablet */
 @media only screen and (min-width: 768px) and (max-width: 1023px){
-    
+    .home {
+        &__mockup {
+            text-align: center;
+            img {
+                width: 50%;
+            }
+        }
+    }
 }
 
 /* Laptop */
 @media only screen and (min-width: 1024px) and (max-width: 1439px) {
-    
+    .home {
+        &__mockup {
+            text-align: center;
+            img {
+                width: 50%;
+            }
+        }
+    }
 }
 
 /* Desktop */
 @media only screen and (min-width: 1440px) and (max-width: 2559px) {
-    
+    .home {
+        &__mockup {
+            text-align: center;
+            img {
+                width: 50%;
+            }
+        }
+    }
 }
 
 /* 4K */
 @media only screen and (min-width: 2560px) {
-    
+    .home {
+        &__mockup {
+            text-align: center;
+            img {
+                width: 50%;
+            }
+        }
+    }
 }
